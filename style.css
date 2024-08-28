@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding:0%;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    background-image: url(/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.nav{
+    background-color: black;
+    box-shadow: 3px 6px 8px rgba(71, 71, 71, 0.504);
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav ul li{
+    height:65px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul li:hover, .nav ul a:hover{
+    background-color: rgb(86, 85, 85);
+}
+
+
+
+
+
+/* HOME SECTION */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 250px;
+
+}
+.home h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.home h1 {
+    overflow: hidden;
+    border-right: .15em solid rgb(199, 195, 188); /* The typwriter cursor */
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end 2s;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width:50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+.home p{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+
+/* BOOK BUTTON */
+
+.book-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+.book-btn:hover, #btnlink:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#btn1{
+    border-radius: 35px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.456);
+    color: white;
+    padding: 15px;
+    font-weight: bolder;
+    width: 250px;
+    border: 2px solid white;
+
+}
+
+
+
+
+
+/* DESTINATIONS */
+
+.featured-destinations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.destination-card{
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.653);
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 03s, box-shadow 0.3s;
+    max-width: 300px;
+}
+.destination-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.236);
+}
+.destination-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 15px;
+}
+.destination-title{
+    font-size: 1.5rem;
+    margin: 0;
+    color: rgba(24, 18, 22, 0.821);
+}
+.desc{
+    font-size: 0.9em;
+    color: rgb(32, 32, 32);
+    margin: 10px 0;
+}
+card-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.714);
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.41);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.contact .map{
+    width: 40%;
+}
+
+.contact h1, #featured h1, #booking h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: #fdabab;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+  }
