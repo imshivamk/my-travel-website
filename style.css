@@ -64,25 +64,24 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 250px;
+    margin-top: 200px;
     margin-bottom: 50px;
+    padding: 20px;
 
 }
 
 .home h1 {
-    display: flex;
-    flex-wrap: wrap;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     overflow: hidden;
-    border-right: .15em solid rgb(199, 195, 188); /* The typwriter cursor */
+    border-right: 0.15em solid rgb(199, 195, 188);
     white-space: nowrap; 
     margin: 0 auto; 
-    letter-spacing: .15em;
+    letter-spacing: 0.15em;
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end 2s;
-  }
+      typing 2s steps(30, end),
+      blink-caret 0.75s step-end 2s;
+}
   
   /* The typing effect */
   @keyframes typing {
@@ -97,12 +96,36 @@ body{
   }
 
 .home p{
-    display: flex;
-    flex-wrap: wrap;
     color: whitesmoke;
     font-size: 2rem;
     font-weight: bolder;
     font-family: monospace;
+}
+
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home p {
+        font-size: 1.2rem;
+    }
+
+    .home {
+        margin-top: 50px;
+    }
+
+    .book-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #btn1 {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 
