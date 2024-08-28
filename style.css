@@ -14,6 +14,15 @@ body{
     background-attachment: fixed;
 }
 
+.desth1, .testh1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
 /* NAVBAR */
 
 .nav{
@@ -51,18 +60,20 @@ body{
 .home{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 250px;
+    margin-bottom: 50px;
 
-}
-.home h1{
-    color: white;
-    font-size: 3rem;
 }
 
 .home h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 3rem;
     overflow: hidden;
     border-right: .15em solid rgb(199, 195, 188); /* The typwriter cursor */
     white-space: nowrap; 
@@ -86,6 +97,8 @@ body{
   }
 
 .home p{
+    display: flex;
+    flex-wrap: wrap;
     color: whitesmoke;
     font-size: 2rem;
     font-weight: bolder;
@@ -99,11 +112,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 35px;
 }
 .book-btn:hover, #btnlink:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #btn1{
@@ -112,6 +124,7 @@ body{
     background-color: rgba(0, 0, 0, 0.456);
     color: white;
     padding: 15px;
+    margin-bottom: 50px;
     font-weight: bolder;
     width: 250px;
     border: 2px solid white;
@@ -124,7 +137,7 @@ body{
 
 /* DESTINATIONS */
 
-.featured-destinations{
+.featured-destinations, .testimonials{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -132,7 +145,7 @@ body{
     gap: 20px;
 }
 
-.destination-card{
+.destination-card, .testcard{
     border-color: white;
     background-color: rgba(255, 255, 255, 0.653);
     border-radius: 10px;
@@ -141,7 +154,7 @@ body{
     transition: transform 03s, box-shadow 0.3s;
     max-width: 300px;
 }
-.destination-card:hover{
+.destination-card:hover, .testcard:hover{
     transform: translateY(-10px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.236);
 }
@@ -176,8 +189,52 @@ card-btn{
 
 
 
+/* testimony */
 
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
 
+.testheader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.testphoto{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testinfo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.testname{
+    font-size: 1.25em;
+    margin: 0;
+    color: black;
+}
+.testrating{
+    color: gold;
+}
+.review{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.723);
+    margin: 0;
+    line-height: 1.5;
+
+}
 
 
 
